@@ -45,3 +45,6 @@
 5. 使用VSCode打开myBlog，执行：`python manage.py startapp articles`
 
 ## 四、创建articles的models
+1.创建model
+2.数据库同步
+3.在admin.py中注册model

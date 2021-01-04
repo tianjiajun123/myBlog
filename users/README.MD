@@ -44,7 +44,31 @@
 4. 退出虚拟环境，windows下：`deactivate`；
 5. 使用VSCode打开myBlog，执行：`python manage.py startapp articles`
 
-## 四、创建articles的models
-1.创建model
-2.数据库同步
-3.在admin.py中注册model
+## 四、创建文章的模型
+
+1.创建model及逆行数据库迁移
+2.在admin.py注册每个app
+3.对于文章管理员是有文章数据库中的所有相关字段
+4.admin.site.register(Articles,ArticlesAdmin) 进行在admin管理员页面网址注册文章以及文章管理员 
+
+## 五、业务逻辑
+
+文章列表页 分页          django
+文章详情页  评论         评论库 第三方库
+详情列表页/文章搜索/     q对象或的对象标题摘要获得信息
+最新文章最新评论排行榜    时间
+按照分类标签的聚类操作    分类标签进行搜索
+联系我页面，发送邮件      发送邮件的行为和操作
+
+## 六、实现模板复用
+
+如何加载静态页面  网上图片不需要解析  加标签  
+在settings.py文件中注册静态页面和templates模板 
+创建公共模板进行继承extends 实现模板复用  
+将公共内容base.html/aside.html写入common文件夹中实现模板复用减少冗余代码的写入
+注册静态内容 {% load static %}  css/js
+
+## 七、注册路由实现页面跳转
+
+在主博客页面的urls.py文件中include引入每个app的urls配置
+MVC模式  models.py 数据库字段内容 进行数据展示和增删改查 views.py   

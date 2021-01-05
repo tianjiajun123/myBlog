@@ -72,3 +72,13 @@
 
 在主博客页面的urls.py文件中include引入每个app的urls配置
 MVC模式  models.py 数据库字段内容 进行数据展示和增删改查 views.py   
+
+
+## 八、将所有app归拢到apps文件夹下
+import sys
+sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
+
+
+## 九、评论和集成markdownfy插件
+django-contrib-comments
+django-markdownfy    

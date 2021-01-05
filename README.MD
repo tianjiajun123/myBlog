@@ -40,7 +40,7 @@
 
 1. 空文件夹下，执行 `django-admin startproject myBlog`;
 2. 给myBlog创建虚拟环境，使用：`python -m venv env`
-3. 进入到虚拟环境，windows下：`.\\env\\Scrtipst\\activate`;
+3. 进入到虚拟环境，windows下：`.\\env\\Scripst\\activate`;
 4. 退出虚拟环境，windows下：`deactivate`；
 5. 使用VSCode打开myBlog，执行：`python manage.py startapp articles`
 

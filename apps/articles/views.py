@@ -49,6 +49,7 @@ def about(request):
 
 def search(request):
     keyword = request.GET.get('keyword')
+    print(keyword)
     if not keyword:
         error_msg = "请输入关键字"
         return render(request,'index.html',locals())
